@@ -4,6 +4,8 @@ import Products from "./Pages/Products";
 import Cart from "./Pages/Cart";
 import Wishlist from "./Pages/Wishlist";
 import Profile from "./Pages/Profile";
+import Register from "./Components/Register";
+import Admin from "./Pages/admin";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path= '/register' element={<Register />} />
+        <Route path="/admin" element={<Admin />}></Route>
       </Routes>
     </BrowserRouter>
   );

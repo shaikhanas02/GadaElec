@@ -9,7 +9,7 @@ function getData() {
 
         const fetchData= async()=>{
          
-        const res = await fetch('https://fakestoreapi.com/products')
+        const res = await fetch('http://localhost:3000/admin')
 
         const info = await res.json() ;
         setData(info) ;
